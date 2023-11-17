@@ -27,3 +27,5 @@ The tiles will be available for "purchase" after hitting the first milestone.
 * optimus-code for their [template mod repo](https://github.com/optimus-code/Cities2Modding/tree/main)
 * [slyh](https://github.com/slyh) for their installation instructions
 * The Cities Skylines II modding discord in general
+
+(This mod is largely untested and I take absolutely no responsibility if it somehow ends up breaking your saves)
