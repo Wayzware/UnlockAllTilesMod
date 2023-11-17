@@ -24,7 +24,7 @@ The tiles will be available for "purchase" after hitting the first milestone.
 5. Launch the game, mods should be loaded automatically
 
 ## Thank You
-* optimus-code for their [template mod repo](https://github.com/optimus-code/Cities2Modding/tree/main)
+* optimus-code for their [template mod repo](https://github.com/optimus-code/Cities2Modding/tree/main), especially the .csproj
 * [slyh](https://github.com/slyh) for their installation instructions
 * The Cities Skylines II modding discord in general
 
