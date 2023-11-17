@@ -1,6 +1,8 @@
 # UnlockAllTilesMod
  
-Unlocks all 529 tiles for Cities Skylines II maps and reduces their cost to $0
+Unlocks all 529 tiles for Cities Skylines II maps and reduces their cost to $0.
+
+The tiles will be available for "purchase" after hitting the first milestone.
 
 # Installation
 1. Remove BepInEx 5 if you have that installed. Otherwise, proceed to step 2
