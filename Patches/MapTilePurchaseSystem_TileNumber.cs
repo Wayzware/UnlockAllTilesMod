@@ -1,16 +1,15 @@
-﻿using Game.Simulation;
-using HarmonyLib;
+﻿using HarmonyLib;
 using System.Reflection;
 
 namespace Wayz.CS2.UnlockAllTilesMod.Patches;
 
-[HarmonyPatch(typeof(Game.Simulation.MapTilePurchaseSystem), "OnCreate")]
+[HarmonyPatch("Game.Simulation.MapTilePurchaseSystem", "OnCreate")]
 public static class MapTilePurchaseSystemPatch_TileNumber
 {
     [HarmonyPrefix]
-    public static bool Prefix(Game.Simulation.MapTilePurchaseSystem __instance)
+    public static bool Prefix(object __instance)
     {
-        var field = typeof(MapTilePurchaseSystem).GetField("kAutoUnlockedTiles", BindingFlags.Static | BindingFlags.NonPublic);
+        var field = AccessTools.TypeByName("Game.Simulation.MapTilePurchaseSystem").GetField("kAutoUnlockedTiles", BindingFlags.Static | BindingFlags.NonPublic);
         field?.SetValue(null, 526); // some tiles are automatically unlocked, so this isnt 529
         return true;
     }
