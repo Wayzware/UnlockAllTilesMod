@@ -2,7 +2,7 @@
  
 Unlocks all 529 tiles for Cities Skylines II maps and reduces their cost to $0.
 
-The tiles will be available for "purchase" after hitting the first milestone.
+The tiles will be available for "purchase" after hitting the first XP milestone.
 
 # Installation
 1. Remove BepInEx 5 if you have that installed. Otherwise, proceed to step 2
@@ -26,6 +26,7 @@ The tiles will be available for "purchase" after hitting the first milestone.
 ## Thank You
 * optimus-code for their [template mod repo](https://github.com/optimus-code/Cities2Modding/tree/main), especially the .csproj
 * [slyh](https://github.com/slyh) for their installation instructions
+* The creators of Harmony and BepInEx
 * The Cities Skylines II modding discord in general
 
 (This mod is largely untested and I take absolutely no responsibility if it somehow ends up breaking your saves)
