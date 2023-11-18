@@ -8,7 +8,7 @@ The tiles will be available for "purchase" after hitting the first XP milestone.
 If you wish to use a mod manager, you can go to the [Unlock All Tiles mod Thunderstore page](https://thunderstore.io/c/cities-skylines-ii/p/Wayzware/UnlockAllTiles/), to automatically install the mod with their mod manager.
 
 ## Installation - Manual
-2. Install [BepInEx 6 Bleeding Edge build](https://builds.bepinex.dev/projects/bepinex_be) or BepInEx 5. 
+1. Install [BepInEx 6 Bleeding Edge build](https://builds.bepinex.dev/projects/bepinex_be) or BepInEx 5. 
 
    The pre-release version of BepInEx 6 available on their GitHub release page is quite outdated (dated August 2022) and may not support loading this mod. Please download the Bleeding Edge version from [their website](https://builds.bepinex.dev/projects/bepinex_be)
 
@@ -16,11 +16,11 @@ If you wish to use a mod manager, you can go to the [Unlock All Tiles mod Thunde
 
    * The installation directory should now have the `BepInEx` folder, the `doorstop_config.ini` file, and the `winhttp.dll` file
 
-3. Run the game once, then close it. You can close it when the main menu appears
+2. Run the game once, then close it. You can close it when the main menu appears
 
-4. Download the mod from the [release page](https://github.com/Wayzware/UnlockAllTilesMod/releases). Make sure you select the download that is compatible with your version of BepInEx. Unzip it into the `Cities Skylines II/BepInEx/plugins` folder.
+3. Download the mod from the [release page](https://github.com/Wayzware/UnlockAllTilesMod/releases). Make sure you select the download that is compatible with your version of BepInEx. Unzip it into the `Cities Skylines II/BepInEx/plugins` folder.
 
-5. Launch the game, and your mods should be loaded automatically
+4. Launch the game, and your mods should be loaded automatically
 
 ## Compiling the Mod Yourself
 The project should be able to build without extra work after cloning if you are using BepInEx 6.
