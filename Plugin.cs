@@ -1,13 +1,17 @@
-﻿using BepInEx;
+﻿#define BEPINEX6
+#if BEPINEX6
+
 using BepInEx.Unity.Mono;
+
+#endif
+
+using BepInEx;
 using HarmonyLib;
-using System;
-using System.Linq;
 using System.Reflection;
 
 namespace Wayz.CS2.UnlockAllTilesMod;
 
-[BepInPlugin("Wayz.C2.UnlockAllTilesMod", "Unlock All Tiles Mod", "0.0.2")]
+[BepInPlugin("Wayz.C2.UnlockAllTilesMod", "Unlock All Tiles Mod", "1.0.0")]
 public class UnlockAllTilesMod : BaseUnityPlugin
 {
     private void Awake()

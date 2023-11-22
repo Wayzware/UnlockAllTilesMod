@@ -1,8 +1,9 @@
-﻿using HarmonyLib;
+﻿using Game.Simulation;
+using HarmonyLib;
 
 namespace Wayz.CS2.UnlockAllTilesMod.Patches;
 
-[HarmonyPatch("Game.Simulation.MapTilePurchaseSystem", "cost", MethodType.Getter)]
+[HarmonyPatch(typeof(MapTilePurchaseSystem), "get_cost")]
 public static class MapTilePurchaseSystemPatch_Cost
 {
     [HarmonyPrefix]
