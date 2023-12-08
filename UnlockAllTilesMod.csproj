@@ -2,7 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>Wayz.CS2.UnlockAllTilesMod</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <Nullable>enable</Nullable>
     <LangVersion>12.0</LangVersion>
     <RestoreAdditionalProjectSources>
@@ -13,10 +13,14 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <BepInEx6>true</BepInEx6>
+    <BepInEx6>false</BepInEx6>
     <AutoInstall>true</AutoInstall>
     <Cities2_Location>C:\Program Files (x86)\Steam\steamapps\common\Cities Skylines II</Cities2_Location>
     <Cities2Libs_Location>$(Cities2_Location)</Cities2Libs_Location>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="$(BepInEx6)">
+    <DefineConstants>$(DefineConstants);BEPINEX6</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
@@ -420,6 +424,7 @@
     <PackageReference Include="BepInEx.Unity.Mono" Version="6.0.0-be.*" IncludeAssets="compile" Condition="$(BepInEx6)" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="HarmonyX" Version="2.10.2" />
+    <PackageReference Include="Wayz.CS2.Lib" Version="0.0.2" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="$(AutoInstall)">
