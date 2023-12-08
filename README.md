@@ -22,6 +22,9 @@ If you wish to use a mod manager, you can go to the [Unlock All Tiles mod Thunde
 
 4. Launch the game, and your mods should be loaded automatically
 
+## Configuration
+By default, this mod makes the purchasing of tiles cost no money. If you would like them to cost money again, you will need to edit the config file located at `C:\Users\YOUR_USERNAME_HERE\AppData\LocalLow\Colossal Order\Cities Skylines II\ModSettings\UnlockAllTiles_Wayz`. **You must run the game with the mod installed at least once for this file to be generated**. Simply change the value next to "FreeTiles" from `true` to `false`, and restart your game for the change to take effect.
+
 ## Compiling the Mod Yourself
 The project should be able to build without extra work after cloning if you are using BepInEx 6.
 
