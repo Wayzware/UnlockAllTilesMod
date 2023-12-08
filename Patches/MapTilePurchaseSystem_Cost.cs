@@ -10,6 +10,6 @@ public static class MapTilePurchaseSystemPatch_Cost
     public static bool Prefix(object __instance, ref int __result)
     {
         __result = 0;
-        return false;
+        return !UnlockAllTilesMod.ModSettings.FreeTiles;
     }
 }
