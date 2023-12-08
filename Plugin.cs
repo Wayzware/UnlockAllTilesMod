@@ -21,13 +21,19 @@ public class UnlockAllTilesMod : BaseUnityPlugin
     {
         GameLogger = Logger;
         SettingsManager = new WayzSettingsManager();
-
-        if (SettingsManager.TryGetSettings<UnlockAllTilesSettings>("UnlockAllTiles_Wayz", "settings", out var settings))
+        try
         {
-            Logger.LogInfo("Successfully loaded settings");
-            ModSettings = settings;
+            if (SettingsManager.TryGetSettings<UnlockAllTilesSettings>("UnlockAllTiles_Wayz", "settings", out var settings))
+            {
+                ModSettings = settings;
+            }
         }
-        else
+        catch 
+        {
+            Logger.LogError("Invalid config file, regenerating settings");
+        }
+
+        if (ModSettings == null)
         {
             ModSettings = new UnlockAllTilesSettings();
             try
@@ -37,7 +43,7 @@ public class UnlockAllTilesMod : BaseUnityPlugin
             }
             catch
             {
-                Logger.LogWarning("Unable to save settings file, using default settings");
+                Logger.LogWarning("Unable to save settings file, using default settings in-memory only");
             }
         }
 
